@@ -11,6 +11,7 @@ android {
     defaultConfig {
         testApplicationId "com.stripe.android.financialconnections.test"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     testOptions {
         unitTests {
@@ -43,6 +44,7 @@ dependencies {
     implementation libs.kotlin.coroutines
     implementation libs.kotlin.coroutinesAndroid
     implementation libs.kotlin.serialization
+    implementation 'com.android.support:multidex:1.0.3'
 
     debugImplementation libs.compose.uiTestManifest
     debugImplementation libs.compose.uiTooling
