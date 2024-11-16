@@ -1,4 +1,2 @@
 jdk:
   - openjdk17
-export:
-  - KOTLIN_OPTS="-Xjvm-default=all"
